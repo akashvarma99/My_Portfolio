@@ -415,7 +415,8 @@
             <a href="#about">About</a>
             <a href="#education">Education</a>
             <a href="#projects">Projects</a>
-            <a href="#">Contacts</a>
+            <a href="#contact">Contacts</a>
+
         </div>
     </div>
 
@@ -424,7 +425,8 @@
         <div class="small-box">Full Stack Developer</div>
         <h1>Creating Digital</h1>
         <h2>Experiences That <span class="blue-text">Matter</span></h2>
-        <button class="button">Get in Touch</button>
+        <a href="#contact" class="button">Get in Touch</a>
+
     </div>
 
     <!-- About Section -->
@@ -454,7 +456,7 @@
             <div class="skill-box">Next.js</div>
             <div class="skill-box">Node.js</div>
             <div class="skill-box">Express</div>
-            <div class="skill-box">Python</div>
+            <div class="skill-box">MongoDB</div>
             <div class="skill-box">Django</div>
             <div class="skill-box">REST APIs</div>
             <div class="skill-box">GraphQL</div>
@@ -525,47 +527,37 @@
                     <div class="tech-box">clipboard.js</div>
                 </div>
             </div>
-            <div class="contact-section" id="contact">
-                <div class="small-box">Get in Touch</div>
-                <h3>Let's work together</h3>
-                <h3>on your next project</h3>
-            
+            <section id="contact" class="contact-section">
+                <div class="contact-header">
+                    <h2>Get in Touch</h2>
+                    <p>Let's work together on your next project</p>
+                </div>
                 <div class="contact-container">
-                    <!-- Left: Contact Form -->
+                    <!-- Left Side: Contact Form -->
                     <div class="contact-form">
-                        <form id="contact-form">
-                            <label>Your Name</label>
-                            <input type="text" name="name" placeholder="Enter your name" required>
-                            
-                            <label>Your Email</label>
-                            <input type="email" name="email" placeholder="Enter your email" required>
-                            
-                            <label>Subject</label>
-                            <input type="text" name="subject" placeholder="Enter subject" required>
-                            
-                            <label>Message</label>
-                            <textarea name="message" placeholder="Write your message here..." required></textarea>
-                            
-                            <button type="submit">Send Message</button>
-                        </form>
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                        
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                        
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Enter subject">
+                        
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Write your message here..."></textarea>
+                        
+                        <button type="submit" class="send-button">Send Message</button>
                     </div>
-            
-                    <!-- Right: Contact Info -->
+                    
+                    <!-- Right Side: Contact Information -->
                     <div class="contact-info">
-                        <div class="info-box">
-                            <h3>Email</h3>
-                            <p>akashvarmagriet@gmail.com</p>
-                        </div>
-                        <div class="info-box">
-                            <h3>Phone</h3>
-                            <p>+91 952769369</p>
-                        </div>
-                        <div class="info-box">
-                            <h3>Location</h3>
-                            <p>Hyderabad, Telangana</p>
-                        </div>
+                        <p><strong>Phone:</strong> +123 456 7890</p>
+                        <p><strong>Location:</strong> City, Country</p>
+                        <p><strong>Email:</strong> example@email.com</p>
                     </div>
                 </div>
+            </section>
             </div>
         </div>
     </div>
@@ -606,4 +598,3 @@
         });
     </script>
 </body>
-</html>
